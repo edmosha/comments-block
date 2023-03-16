@@ -1,0 +1,13 @@
+.post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 768px;
+  height: 100px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ffe78e 0, #f6a5ff 100%);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}

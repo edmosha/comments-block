@@ -1,0 +1,74 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px 30px;
+  background-color: #fff;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  &__header {
+    position: relative;
+    display: flex;
+    min-height: 45px;
+    align-items: center;
+  }
+
+  &__author {
+    margin: 0 20px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3f3f3f;
+  }
+
+  &__date {
+    color: #6a6a6a;
+  }
+
+  &__delete-btn {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 20px;
+    height: 20px;
+
+    background: transparent url("../../images/basket.svg") center no-repeat;
+    background-size: 16px;
+  }
+
+  &__text {
+    margin: 10px 0 20px;
+    color: #6a6a6a;
+  }
+
+  &__like-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__like-counter {
+    margin: 0 0 0 7px;
+    color: #6a6a6a;
+  }
+
+  &__like-btn {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+
+    width: 20px;
+    height: 20px;
+    background: transparent url("../../images/like-button.svg") center no-repeat;
+    background-size: 19px;
+  }
+}

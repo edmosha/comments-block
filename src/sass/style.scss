@@ -1,0 +1,9 @@
+/* vendor */
+@import "../vendor/normalize.scss";
+@import "../vendor/fonts/Montserrat.scss";
+
+/* page */
+@import "../blocks/page/page.scss";
+@import "../blocks/comment/comment.scss";
+@import "../blocks/comments/comments.scss";
+@import "../blocks/post/post.scss";
