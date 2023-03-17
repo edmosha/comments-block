@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Title</title>
 </head>
 <body class="page">
@@ -13,45 +14,44 @@
 				<h1 class="comments__form-title">Оставить комментарий</h1>
 
 				<input name="author" type="text" class="comments__input" placeholder="Как вас зовут?"
-							 minlength="2" maxlength="20" required>
+							 minlength="2" maxlength="25" required>
+				<span class="comments__input-error comments__input-error_type_author"></span>
+
 				<input name="date" type="date" class="comments__input">
-				<span class="comments__input-error comments__input-error_type_author">Текст должен быть не короче 2 симв. Длина текста сейчас: 1 символ.</span>
-				<span class="comments__input-error comments__input-error_type_date">sdfdsf</span>
+				<span class="comments__input-error comments__input-error_type_date"></span>
 
 				<textarea name="text" class="comments__text" placeholder="Напишите что-нибудь"
-									minlength="10" maxlength="180" required></textarea>
-				<span class="comments__input-error comments__input-error_type_text">sddsffd</span>
+									minlength="6" maxlength="300" required></textarea>
+				<span class="comments__input-error comments__input-error_type_text"></span>
 
 				<button class="comments__submit-btn">Отправить</button>
 
 			</form>
 
-			<div class="comments__container">
-				<h2 class="comments__title">Все комментарии</h2>
-				<div class="comment">
-					<div class="comment__header">
-						<h2 class="comment__author">Даша</h2>
-						<p class="comment__date">16.03.2023</p>
-						<button class="comment__delete-btn"></button>
-					</div>
+			<h2 class="comments__title">Все комментарии</h2>
 
-					<p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-						Commodi consectetur cumque dignissimos doloremque dolorum itaque,
-						laborum molestiae non numquam placeat possimus quasi qui recusandae, sit, voluptatem?
-						Alias et fuga nihil.</p>
-
-					<div class="comment__like-container">
-						<button class="comment__like-btn"></button>
-						<p class="comment__like-counter">10</p>
-					</div>
-
-				</div>
-			</div>
+			<ul class="comments__container"></ul>
 		</section>
 	</main>
 
 	<template id="comment">
+		<li class="comments__item">
+			<article class="comment">
+				<div class="comment__header">
+					<h2 class="comment__author"></h2>
+					<p class="comment__date"></p>
+					<button class="comment__delete-btn"></button>
+				</div>
 
+				<p class="comment__text"></p>
+
+				<div class="comment__like-container">
+					<button class="comment__like-btn"></button>
+					<p class="comment__like-counter">0</p>
+				</div>
+			</article>
+		</li>
 	</template>
+
 </body>
 </html>

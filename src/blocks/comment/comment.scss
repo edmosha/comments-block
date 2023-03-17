@@ -42,6 +42,13 @@
 
     background: transparent url("../../images/basket.svg") center no-repeat;
     background-size: 16px;
+    opacity: .5;
+
+    transition: opacity 0.1s ease-in;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   &__text {
@@ -70,5 +77,19 @@
     height: 20px;
     background: transparent url("../../images/like-button.svg") center no-repeat;
     background-size: 19px;
+
+    transition: background 0.1s ease-in;
+
+    &:hover {
+      background: transparent url("../../images/like-button-active.svg") center no-repeat;
+      background-size: 19px;
+      opacity: .5;
+    }
+  }
+
+  &__like-btn_active {
+    background: transparent url("../../images/like-button-active.svg") center no-repeat;
+    background-size: 19px;
+    opacity: 1;
   }
 }
